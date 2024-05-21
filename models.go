@@ -623,7 +623,7 @@ type UserPlexTV struct {
 		RenewsAt string `json:"renewsAt"` // can be null; not sure of type as I have lifetime membership
 		EndsAt   string `json:"endsAt"`   // can be null; not sure of type as I have lifetime membership
 		Type     string `json:"type"`
-		Transfer string `json:"transfer"` // can be null; not sure of type
+		Transfer bool   `json:"transfer"` // can be null
 		State    string `json:"state"`
 	} `json:"subscriptions"`
 	PastSubscriptions []struct {
